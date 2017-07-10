@@ -1,0 +1,9 @@
+version: 2
+jobs:
+   build:
+     working_directory: ~/spreedemo
+     docker:
+       - image: circleci/ruby:2.2
+     steps:
+       - checkout
+       - run: echo "hello world"
